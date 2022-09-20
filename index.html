@@ -14,58 +14,10 @@
 canvas{width:100%;height:100%;}a:link{text-decoration:none;}a:visited{text-decoration:none;}
 </style>
 <style>
-.inputFile {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  height: 1.5rem;
+#fileUploadField{
+  visibility: hidden;  
+ /* opacity: 0; */
 }
-
-.inputFile input {
-  margin: 0;
-  filter: alpha(opacity=0);
-  opacity: 0;
-}
-
-.inputFile-custom {
-  text-align: left;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 5;
-  height: 1.5rem;
-  padding: .5rem 1rem;
-  line-height: 1.5;
-  color: #444;
-  background-color: #f1f1f1;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  box-shadow: inset 0 .5px .5px rgba(0, 0, 0, .05);
-  user-select: none;
-}
-
-.inputFile-custom:before {
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  bottom: -1px;
-  z-index: 6;
-  display: block;
-  content: "Browse";
-  height: 1.5rem;
-  padding: .5rem 1rem;
-  line-height: 1.5;
-  color: #f1f1f1;
-  background-color: #333;
-  border: 1px solid #333;
-  border-radius: 0 3px 3px 0;
-}
-
-.inputFile-custom:after {
-  content: "Choose file...";
-}
-
 </style>
 </head>
 
@@ -78,10 +30,8 @@ canvas{width:100%;height:100%;}a:link{text-decoration:none;}a:visited{text-decor
 <p>Silahkan unggah gambar, aplikasi ini akan otomatis menggabungkan unggahan gambar yang Anda pilih.</p>
 
 <p>
-<label class="inputFile">
-  <span class="inputFile-custom"></span>
-  <input type="file" id="image_input" multiple>
-</label>
+<input type="file" name="image_input" id="image_input" />
+<div>This is a div</div>
 </p>
 <!--
 <p>
