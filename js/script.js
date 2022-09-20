@@ -77,11 +77,4 @@ let generate = () => {
 }
 
 
-   updateList = function() {
-      let output = document.getElementById('fileList');
-      let children = "";
-      for (var i = 0; i < input.files.length; ++i) {
-          children +=  '<li>'+ image.files.item(i).name + '<span class="remove-list" onclick="return this.parentNode.remove()">X</span>' + '</li>'
-      }
-      output.innerHTML = children;
-  }
+    $('#fileinfo').text($(this).val());
