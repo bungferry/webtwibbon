@@ -13,81 +13,22 @@
 <style>
 canvas{width:100%;height:100%;}a:link{text-decoration:none;}a:visited{text-decoration:none;}
 </style>
-<style>
- .upload {
-	 display: block;
-	 position: relative;
-	 width: 300px;
-	 margin: 0 auto;
-	 box-sizing: border-box;
-	 color: #666;
-	 border: solid 1px #ccc;
-	 background-color: #fefefe;
-}
- .upload::before {
-	 content: "+";
-	 height: 100%;
-	 width: 30px;
-	 top: 0;
-	 right: 0;
-	 position: absolute;
-	 color: #666;
-	 text-align: center;
-	 line-height: 21px;
-}
- .upload::after {
-	 content: "";
-	 position: absolute;
-	 top: 0;
-	 left: 0;
-	 right: 0;
-	 bottom: 0;
-	 cursor: pointer;
-}
- .upload [type="file"] {
-	 width: 100%;
-	 padding: 3px;
-	 box-sizing: border-box;
-}
- .upload [type="file"]::-webkit-file-upload-button {
-	 -webkit-appearance: none;
-	 width: 0;
-	 height: 0;
-	 padding: 0;
-	 border: 0;
-}
- 
-</style>
 </head>
 
-<body>
-<header>
-<div>
-<a href="/">
-<h1 style="font-size:5vw;">TWIBBON GENERATOR</h1>
-</a>
-</div>
-</header>
-    
+<body>   
 <article>
+
 <h1>Twibbon Generator</h1>
 
 <p>Ini adalah situs web tempat Anda dapat menambahkan foto ke bingkai.</p> 
 <p>Silahkan unggah gambar, aplikasi ini akan otomatis menggabungkan unggahan gambar yang Anda pilih.</p>
 
-<p>
-<label class="upload">
-<input type="file" class="custom-file-input" name="image_input" id="image_input" multiple>
-</label>
-</p>
 
-<!--
 <p>
 <strong>Unggah Gambar</strong>
 <br><br>
 <input type="file" name="image_input" id="image_input" multiple>
 </p>
--->
 
 <p>
 <button class="button-4" role="button" onclick="generate()">Submit!</button>
@@ -97,11 +38,11 @@ canvas{width:100%;height:100%;}a:link{text-decoration:none;}a:visited{text-decor
 <p><canvas id="canvas"></canvas></p>
 
 </article>
+
 <footer>
-<div>
-Copyright © 2022 <a href="/">Ferry Ayunda</a>
-</div>
+  <p><a target="_blank" rel="noopener" href="/">Copyright © 2022 Ferry Ayunda.</a></p>
 </footer>
+
 
 <script src="js/script.js"></script>
 <script src="js/spin.js"></script>
