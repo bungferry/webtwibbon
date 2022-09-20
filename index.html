@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<title>Twibbon Generator</title>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/build.css" type="text/css" />
+   
+<style>
+canvas{width:100%;height:100%;}a:link{text-decoration:none;}a:visited{text-decoration:none;}
+</style>
+</head>
+
+<body>
+<header>
+<div>
+<a href="/">
+<h1 style="font-size:5vw;">TWIBBON GENERATOR</h1>
+</a>
+</div>
+</header>
+    
+<article>
+<h1>Twibbon Generator</h1>
+
+<p>Ini adalah situs web tempat Anda dapat menambahkan foto ke bingkai.</p> 
+<p>Silahkan unggah gambar, aplikasi ini akan otomatis menggabungkan unggahan gambar yang Anda pilih.</p>
+
+<p>
+<strong>Unggah Gambar</strong>
+<br><br>
+<input type="file" name="image_input" id="image_input" multiple>
+</p>
+<p>
+<button class="button-4" role="button" onclick="generate()">Submit!</button>
+<button class="button-3" role="button" onclick="download()" id="download" disabled>Unduh!</button>
+</p>
+    
+<p><canvas id="canvas"></canvas></p>
+
+</article>
+<footer>
+<div>
+Copyright © 2022 <a href="/">Ferry Ayunda</a>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/spin.js"></script>
+</body>
+</html>
