@@ -77,4 +77,6 @@ let generate = () => {
 }
 
 
-    $('#fileinfo').text($(this).val());
+    $('div').click(function() {
+    $('input[type="file"]').click();
+});
