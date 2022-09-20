@@ -75,8 +75,3 @@ let generate = () => {
         init();
     }
 }
-
-
-    $('div').click(function() {
-    $('input[type="file"]').click();
-});
