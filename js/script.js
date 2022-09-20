@@ -75,3 +75,13 @@ let generate = () => {
         init();
     }
 }
+
+
+   updateList = function() {
+      let output = document.getElementById('fileList');
+      let children = "";
+      for (let i = 0; i < input.files.length; ++i) {
+          children +=  '<li>'+ input.files.item(i).name + '<span class="remove-list" onclick="return this.parentNode.remove()">X</span>' + '</li>'
+      }
+      output.innerHTML = children;
+  }
