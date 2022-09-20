@@ -1,2 +1,2 @@
-# TWIBBONSTMJ '54
-only Twibbon, just for fun
+# TWIBBON
+Only Twibbon, Just for fun...
