@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<title>Twibbon Generator</title>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.70;" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/build.css" type="text/css" />
+<link rel="stylesheet" href="css/modals.css" type="text/css" />
+<link rel="stylesheet" href="css/load.css" type="text/css" />
+
+<link rel="icon" href="favicon.ico"> 
+<style>
+canvas{width:100%;height:100%;}a:link{text-decoration:none;}a:visited{text-decoration:none;}
+</style>
+<style>
+.file-cont {
+	 background: #EFF3F7;
+	 position: relative;
+	 height: 45px;
+	 width: 300px;
+	 display: flex;
+	 align-items: center;
+	 border-radius: 6px;
+}
+.file-cont .label-file {
+	 position: absolute;
+	 color: white;
+	 top: 0px;
+	 left: 0px;
+	 background: #dd394c;
+	 height: 45px;
+	 padding: 0 16px;
+	 border-right: 19px solid #EFF3F7;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 border-bottom-left-radius: 5px;
+	 border-top-left-radius: 5px;
+	 font-size: 14px;
+	 cursor: pointer;
+}
+.file-cont .label-file:hover {
+	 background: #a0232f;
+}
+.file-cont .input-file {
+	 width: 100%;
+	 outline: none;
+}
+</style>
+<script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="preloader">
+<div id="status">&nbsp;</div>
+</div>
+
+<article>
+
+<h1>Twibbon Generator</h1>
+
+<p>Ini adalah situs web tempat Anda dapat menambahkan foto ke bingkai.</p> 
+<p>Silahkan unggah gambar, aplikasi ini akan otomatis menggabungkan unggahan gambar yang Anda pilih.</p>
+
+<p>
+<div class="file-cont">
+<label for="image_input" class="label-file">Select File</label>
+<input class="input-file" type="file" name="image_input" id="image_input" multiple>
+</div>
+</p>
+
+<p>
+<button class="button-4" role="button" onclick="generate()">SUBMIT!</button>
+<!--<button class="button-3" role="button" onclick="download()" id="download" disabled>Unduh!</button>-->
+</p>
+
+<h1>Tutorial</h1>   
+<p>
+1. Klik 'Select file' unggah gambar Anda.<br>
+2. Klik 'Submit!' untuk melihat hasil twibbon Anda.<br>
+3. Berikutnya klik 'Unduh' untuk mengunduh hasil twibbon.<br>
+4. Tombol 'Hapus' untuk menghapus hasil twibbon Anda atau memuat ulang unggahan gambar.
+</p>
+
+</article>
+
+<footer>
+  <p><a target="_blank" rel="noopener" href="https://www.facebook.com/bungferry.wa">Copyright © 2022 Ferry Ayunda.</a></p>
+</footer>
+
+<!-- Result -->
+<div id="custom-modal" class="custom-modal">
+<div class="custom-modal-dialog">
+<div class="custom-modal-content">
+<span class="close-modal">X</span>
+<div class="custom-modal-body">
+<div class="custom-modal-inner">
+<!-- Contetn here -->
+<h2>Well Done! </h2>
+<p>
+<canvas id="canvas"></canvas>
+</p>
+
+<p>
+<button class="button-3" role="button" onclick="download()" id="download" disabled>UNDUH!</button>
+<button class="button-4" id="cancel" onclick="location.reload()" role="button" style="color:red;">HAPUS!</button>
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/load.js"></script>
+</body>
+</html>
