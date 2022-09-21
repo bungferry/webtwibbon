@@ -1,4 +1,3 @@
-
 #preloader {
   position: fixed;
   top: 0;
@@ -19,7 +18,7 @@
   /* centers the loading animation horizontally one the screen */
   top: 50%;
   /* centers the loading animation vertically one the screen */
-  background-image: url(https://raw.githubusercontent.com/cakfer/preloader/main/img/load.gif);
+  background-image: url(https://raw.githubusercontent.com/bungferry/webtwibbon/master/images/loading.svg);
   /* path to your loading animation */
   background-repeat: no-repeat;
   background-position: center;
