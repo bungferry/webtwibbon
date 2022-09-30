@@ -62,7 +62,7 @@ let enableBtnDownload = () => {
     btnDownload.removeAttribute('disabled');
 }
 
-let generate = () => {
+let simple.alert = () => {
     
     if(image.files[0] === undefined) 
         alert('Gambar tidak boleh kosong!');
